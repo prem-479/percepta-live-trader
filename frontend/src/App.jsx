@@ -1,12 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import LiveSignals from "./pages/LiveSignals";
+import News from "./pages/News";
+import Risk from "./pages/Risk";
+import Coach from "./pages/Coach";
+import Portfolio from "./pages/Portfolio";
 
-function App() {
+export default function App() {
   return (
-    <div style={{ padding: "40px", background: "#121212", minHeight: "100vh" }}>
-      <h1 style={{ color: "white" }}>Percepta Live Trading Dashboard</h1>
-      <LiveSignals />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <div style={{ padding: "20px", color: "white" }}>
+        <Routes>
+          <Route path="/" element={<LiveSignals />} />
+          <Route path="/signals" element={<LiveSignals />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/risk" element={<Risk />} />
+          <Route path="/coach" element={<Coach />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
