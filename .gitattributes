@@ -1,0 +1,2 @@
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+colab_training/models/sentiment/* filter=lfs diff=lfs merge=lfs -text
