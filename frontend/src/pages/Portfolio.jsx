@@ -1,3 +1,8 @@
 export default function Portfolio() {
-  return <h2 style={{ color: "white" }}>📊 Portfolio Analytics</h2>;
+  return (
+    <div style={{ color: "white", padding: "20px" }}>
+      <h2>📁 Portfolio Overview</h2>
+      <p>Portfolio metrics will be displayed here.</p>
+    </div>
+  );
 }

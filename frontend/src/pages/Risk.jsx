@@ -1,3 +1,8 @@
 export default function Risk() {
-  return <h2 style={{ color: "white" }}>⚠️ Risk Dashboard</h2>;
+  return (
+    <div style={{ color: "white", padding: "20px" }}>
+      <h2>⚠️ Risk Alerts</h2>
+      <p>Risk engine results will appear here.</p>
+    </div>
+  );
 }

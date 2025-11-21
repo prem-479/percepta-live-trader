@@ -1,3 +1,8 @@
 export default function News() {
-  return <h2 style={{ color: "white" }}>📰 News Sentiment Page</h2>;
+  return (
+    <div style={{ color: "white", padding: "20px" }}>
+      <h2>📰 Market News</h2>
+      <p>News API integration coming next…</p>
+    </div>
+  );
 }
